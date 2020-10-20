@@ -33,12 +33,12 @@ app.listen(port, () => console.log(`Server Started on port ${port}...`));
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Get Index Page Request
-app.get ('/', (req, res) => {
-    res.render(config.theme);
-});
+// app.get ('/', (req, res) => {
+//     res.render(config.theme);
+// });
 
 // Post Email Request
-app.post('/send', cors(corsOptions),(req, res) => {
+app.post('/', cors(corsOptions),(req, res) => {
 
     // Email Template
     const output = `
