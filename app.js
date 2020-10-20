@@ -19,7 +19,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 var corsOptions = {
-        origin: 'https://lbiiw.com/',
+        origin: 'https://winkeyinternational.co.ke/',
         optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
       }
 
@@ -113,10 +113,10 @@ app.post('/', cors(corsOptions),(req, res) => {
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
           
-          res.redirect(400, 'https://winkeyinternational.co.ke/');
+          res.redirect('https://winkeyinternational.co.ke/');
         } else {
          
-          res.redirect(200, 'https://winkeyinternational.co.ke/');
+          res.redirect('https://winkeyinternational.co.ke/');
         }
       });
 });
