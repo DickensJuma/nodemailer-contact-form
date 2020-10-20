@@ -112,10 +112,10 @@ app.post('/send', cors(corsOptions),(req, res) => {
 
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
-          console.log(error);
+          
           res.redirect(400, 'https://winkeyinternational.co.ke/');
         } else {
-          console.log('Email sent: ' + info.response);
+         
           res.redirect(200, 'https://winkeyinternational.co.ke/');
         }
       });
