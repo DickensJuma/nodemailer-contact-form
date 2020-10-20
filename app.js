@@ -19,7 +19,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 var corsOptions = {
-        origin: 'https://winkeyinternational.co.ke/',
+        origin: 'https://lbiiw.com/',
         optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
       }
 
