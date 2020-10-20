@@ -24,10 +24,10 @@ var corsOptions = {
       }
 
 
-      const PORT = 3000 || process.env.PORT;
+      const port =  process.env.PORT || 3000;
 
 // Server Start Notification
-app.listen(PORT, () => console.log(`Server Started on port ${PORT}...`));
+app.listen(port, () => console.log(`Server Started on port ${PORT}...`));
 
 // Set Static Folder Path
 app.use('/public', express.static(path.join(__dirname, 'public')));
