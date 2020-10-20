@@ -27,7 +27,7 @@ var corsOptions = {
       const port =  process.env.PORT || 3000;
 
 // Server Start Notification
-app.listen(port, () => console.log(`Server Started on port ${PORT}...`));
+app.listen(port, () => console.log(`Server Started on port ${port}...`));
 
 // Set Static Folder Path
 app.use('/public', express.static(path.join(__dirname, 'public')));

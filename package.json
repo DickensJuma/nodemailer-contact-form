@@ -4,6 +4,7 @@
   "description": "Contact form build with Bootstrap and Nodemailer",
   "main": "app.js",
   "scripts": {
+    "build": "npm install && npm build",
     "start": "node app.js"
   },
   "author": "DickensJuma",
@@ -13,8 +14,10 @@
     "cors": "^2.8.5",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
+    "foobar": "1.1.0",
     "nodemailer": "^4.2.0"
-  },"engines": {
+  },
+  "engines": {
     "node": "10.19.0"
   }
 }
