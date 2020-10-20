@@ -22,10 +22,12 @@ var corsOptions = {
         origin: 'https://winkeyinternational.co.ke/',
         optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
       }
-       
+
+
+      const PORT = 3000 || process.env.PORT;
 
 // Server Start Notification
-app.listen(3000, () => console.log("Server Started on port 3000..."));
+app.listen(PORT, () => console.log(`Server Started on port ${PORT}...`));
 
 // Set Static Folder Path
 app.use('/public', express.static(path.join(__dirname, 'public')));
